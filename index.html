@@ -6,7 +6,15 @@
     hello(name); // Приветствую, Ваня
 </script>
 <script type="module">
-	import myAge, { birthday } from "./age.js";
-	alert(`Возраст - ${myAge}`);
-	alert(`Дата рождения - ${birthday}`);
+    import myAge, { birthday } from "./age.js";
+    alert(`Возраст - ${myAge}`);
+    alert(`Дата рождения - ${birthday}`);
+</script>
+<script type="module">
+    import { changeName } from "./user.js";
+    changeName("Пётр");
+</script>
+<script type="module">
+    import { name, hello as helloFunction } from "./user.js";
+    helloFunction(name);
 </script>
