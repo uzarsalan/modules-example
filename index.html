@@ -1,0 +1,12 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<script type="module">
+    import { name, hello } from "./user.js";
+    alert(`Привет, ${name}!`); // Привет, Ваня!
+    hello(name); // Приветствую, Ваня
+</script>
+<script type="module">
+	import myAge, { birthday } from "./age.js";
+	alert(`Возраст - ${myAge}`);
+	alert(`Дата рождения - ${birthday}`);
+</script>
